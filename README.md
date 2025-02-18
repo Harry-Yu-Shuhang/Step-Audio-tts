@@ -10,7 +10,7 @@ git clone --recursive https://github.com/stepfun-ai/Step-Audio.git
 
 进入项目文件夹
 ```
-cd Step-Audio
+cd autodl-tmp
 ```
 
 ## 2.检查需要的驱动
@@ -40,4 +40,19 @@ pip show onnxruntime-gpu
 ```
 ```
 apt install -y sox
+```
+
+## 4.登陆Hugging Face
+```
+huggingface-cli login
+```
+从Hugging Face下载模型
+```
+mkdir -p models/stepfun-ai
+huggingface-cli download stepfun-ai/Step-Audio-Tokenizer --quiet --local-dir models/stepfun-ai/Step-Audio-Tokenizer
+huggingface-cli download stepfun-ai/Step-Audio-TTS-3B --quiet --local-dir models/stepfun-ai/Step-Audio-TTS-3B
+
+```
+```
+!huggingface-cli download stepfun-ai/Step-Audio-TTS-3B --quiet --local-dir /content/models/stepfun-ai/Step-Audio-TTS-3B
 ```
