@@ -56,21 +56,30 @@ huggingface-cli download stepfun-ai/Step-Audio-TTS-3B --quiet --local-dir models
 ```
 cd Step-Audio
 ```
+创建输出结果文件夹
+```
+mkdir output_audio
+```
 
 ## 5.推理
-```Python
-# tts without ref audio
-python tts_inference.py --model-path=/content/models/stepfun-ai/ --synthesis-type=tts --output-path=./
+创建 run_tts.py
+```
+sudo vim run_tts.py
+```
+按下i进入插入模型，填写以下内容。如果需要修改，自行修改。
+```
+import os
 
-from IPython.display import Audio
-Audio('./output_tts.wav',autoplay=True)
+# 运行 TTS（文本转语音）
+os.system("python tts_inference.py --model-path=models/stepfun-ai/ --synthesis-type=tts --output-path=./output_audio/output_tts.wav")
 
-from IPython.display import Audio
-Audio('examples/prompt_wav_yuqian.wav',autoplay=True)
+# 运行声音克隆
+os.system("python tts_inference.py --model-path=models/stepfun-ai/ --synthesis-type=clone --output-path=./output_audio/output_clone.wav")
 
-# tts without ref audio
-python tts_inference.py --model-path=/content/models/stepfun-ai/ --synthesis-type=clone --output-path=./
-
-from IPython.display import Audio
-Audio('./output_clone.wav',autoplay=True)
+print("TTS 生成完毕，文件：output_tts.wav")
+print("声音克隆生成完毕，文件：output_clone.wav")
+```
+按下:wq保存并退出，然后运行
+```
+python run_tts.py
 ```
