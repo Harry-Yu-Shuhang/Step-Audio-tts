@@ -51,8 +51,8 @@ huggingface-cli login
 mkdir -p models/stepfun-ai
 huggingface-cli download stepfun-ai/Step-Audio-Tokenizer --quiet --local-dir models/stepfun-ai/Step-Audio-Tokenizer
 huggingface-cli download stepfun-ai/Step-Audio-TTS-3B --quiet --local-dir models/stepfun-ai/Step-Audio-TTS-3B
-
 ```
+进入项目路径
 ```
-!huggingface-cli download stepfun-ai/Step-Audio-TTS-3B --quiet --local-dir /content/models/stepfun-ai/Step-Audio-TTS-3B
+cd Step-Audio
 ```
