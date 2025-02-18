@@ -17,10 +17,27 @@ cd Step-Audio
 ```
 nvcc --version
 ```
-下面是AutoDL服务器的代码
+下面是Colab服务器的代码，别的根目录要改
 ```
 ls /usr/local/cuda-12.5/lib64/libcublasLt*
 ```
 
 ## 3.安装需要的库
+```
 pip install -q -r requirements.txt
+```
+```
+pip show torch
+```
+```
+pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu121
+```
+```
+pip install onnxruntime-gpu==1.20.1
+```
+```
+pip show onnxruntime-gpu
+```
+```
+apt install -y sox
+```
