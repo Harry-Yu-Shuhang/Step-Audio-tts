@@ -58,7 +58,7 @@ cd Step-Audio
 ```
 
 ## 5.推理
-```
+```Python
 # tts without ref audio
 !python tts_inference.py --model-path=/content/models/stepfun-ai/ --synthesis-type=tts --output-path=./
 
