@@ -60,7 +60,7 @@ cd Step-Audio
 ## 5.推理
 ```Python
 # tts without ref audio
-!python tts_inference.py --model-path=/content/models/stepfun-ai/ --synthesis-type=tts --output-path=./
+python tts_inference.py --model-path=/content/models/stepfun-ai/ --synthesis-type=tts --output-path=./
 
 from IPython.display import Audio
 Audio('./output_tts.wav',autoplay=True)
@@ -69,7 +69,7 @@ from IPython.display import Audio
 Audio('examples/prompt_wav_yuqian.wav',autoplay=True)
 
 # tts without ref audio
-!python tts_inference.py --model-path=/content/models/stepfun-ai/ --synthesis-type=clone --output-path=./
+python tts_inference.py --model-path=/content/models/stepfun-ai/ --synthesis-type=clone --output-path=./
 
 from IPython.display import Audio
 Audio('./output_clone.wav',autoplay=True)
