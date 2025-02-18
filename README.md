@@ -17,7 +17,7 @@ cd Step-Audio
 ```
 nvcc --version
 ```
-下面是Audotl服务器的代码
+下面是AutoDL服务器的代码
 ```
 ls /usr/local/cuda-12.5/lib64/libcublasLt*
 ```
