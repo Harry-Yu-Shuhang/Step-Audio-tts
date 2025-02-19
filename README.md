@@ -70,8 +70,8 @@ huggingface-cli login
 从Hugging Face下载模型
 ```
 mkdir -p models/stepfun-ai
-huggingface-cli download stepfun-ai/Step-Audio-Tokenizer --quiet --local-dir models/stepfun-ai/Step-Audio-Tokenizer
-huggingface-cli download stepfun-ai/Step-Audio-TTS-3B --quiet --local-dir models/stepfun-ai/Step-Audio-TTS-3B
+huggingface-cli download stepfun-ai/Step-Audio-Tokenizer --local-dir models/stepfun-ai/Step-Audio-Tokenizer
+huggingface-cli download stepfun-ai/Step-Audio-TTS-3B --local-dir models/stepfun-ai/Step-Audio-TTS-3B
 ```
 创建输出结果文件夹
 ```
