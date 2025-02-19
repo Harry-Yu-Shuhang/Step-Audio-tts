@@ -12,6 +12,11 @@ conda create -n stepaudio python=3.10
 conda activate stepaudio
 ```
 如果没安装conda，先安装conda，自行查阅。Python3.10
+如果报错，运行以下命令
+```
+conda init bash  # 如果你用的是 Bash
+source ~/.bashrc  # 如果用 Bash
+```
 终端执行
 ```
 git clone --recursive https://github.com/stepfun-ai/Step-Audio.git
