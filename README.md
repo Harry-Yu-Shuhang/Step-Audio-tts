@@ -6,6 +6,9 @@
  创建conda环境
 ```
 conda create -n stepaudio python=3.10
+```
+激活conda环境
+```
 conda activate stepaudio
 ```
 如果没安装conda，先安装conda，自行查阅。Python3.10
