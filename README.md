@@ -79,14 +79,14 @@ mkdir output_audio
 ```
 
 ## 5.推理
-两种方法
+两种模式
 ### 1.终端运行
 两种方法
-1.tts
+#### 1.tts
 ```
 python tts_inference.py --model-path=models/stepfun-ai/ --synthesis-type=tts --output-path=./output_audio/output_tts.wav
 ```
-2.克隆
+#### 2.克隆
 ```
 python tts_inference.py --model-path=models/stepfun-ai/ --synthesis-type=clone --output-path=./output_audio/output_clone.wav
 ```
