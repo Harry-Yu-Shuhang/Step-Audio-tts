@@ -57,7 +57,7 @@ pip install onnxruntime-gpu==1.20.1
 pip show onnxruntime-gpu
 ```
 ```
-sudo apt update
+apt update
 ```
 ```
 apt install -y sox
