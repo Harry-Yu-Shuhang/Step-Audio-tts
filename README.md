@@ -38,7 +38,7 @@ ls /usr/local/cuda-12.5/lib64/libcublasLt*
 
 ## 3.安装需要的库
 ```
-pip install -q -r requirements.txt
+pip install -r requirements.txt
 ```
 ```
 pip show torch
