@@ -2,7 +2,11 @@
 
 文件是Google Colab代码，要在Ububtu的话按照以下步骤
 
- ## 1.拉取云端仓库
+## 1.拉取云端仓库
+Autodl启动学术加速
+```
+source /etc/network_turbo
+```
  创建conda环境
 ```
 conda create -n stepaudio python=3.10
