@@ -77,6 +77,10 @@ huggingface-cli download stepfun-ai/Step-Audio-TTS-3B --local-dir models/stepfun
 ```
 mkdir output_audio
 ```
+安装ffmeg(如果没装过)
+```
+sudo apt install ffmpeg
+```
 
 ## 5.推理
 两种模式
