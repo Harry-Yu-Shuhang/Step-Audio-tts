@@ -7,6 +7,12 @@
 ```
 git clone --recursive https://github.com/stepfun-ai/Step-Audio.git
 ```
+创建conda环境
+```
+conda create -n stepaudio python=3.10
+conda activate stepaudio
+```
+如果没安装conda，先安装conda，自行查阅。Python3.10
 
 进入项目文件夹
 ```
