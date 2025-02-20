@@ -29,7 +29,7 @@ def main():
         torchaudio.save(f"{args.output_path}/output_tts.wav", output_audio, sr)
     else:
         clone_speaker = {"speaker":"Sparkle","prompt_text":"你只能凑上台前，站到聚光灯下，看一切围着你手舞足蹈。", "wav_path":"examples/Sparkle_Crazy.WAV"}
-        text_clone = "瑶瑶，这是我用你昨天推荐的模型复刻的花火。"
+        text_clone = "这是我用你昨天推荐的模型复刻的花火。"
         output_audio, sr = tts_engine(text_clone, "",clone_speaker)
         torchaudio.save(f"{args.output_path}/output_clone.wav", output_audio, sr)
 
