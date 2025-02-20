@@ -5,10 +5,7 @@
 **注意：Cuda要12.x版本，11.x用不了**
 
 ## 1.拉取云端仓库
-Autodl启动学术加速
-```
-source /etc/network_turbo
-```
+
  创建conda环境
 ```
 conda create -n stepaudio python=3.10
