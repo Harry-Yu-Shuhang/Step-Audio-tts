@@ -1,6 +1,6 @@
 # Step-Audio-tts
 
-文件是Google Colab代码，要在Ububtu的话按照以下步骤
+.ipynb文件是Google Colab代码，打开就可以用。要在Ububtu的话按照以下步骤
 
 **注意：Cuda要12.x版本，11.x用不了**
 
