@@ -83,17 +83,17 @@ sudo apt install ffmpeg
 
 ## 5.推理
 两种模式
-### 1.终端运行
+### A.终端运行
 两种方法
-#### 1.tts
+#### a.tts
 ```
 python tts_inference.py --model-path=models/stepfun-ai/ --synthesis-type=tts --output-path=./output_audio/output_tts.wav
 ```
-#### 2.克隆
+#### b.克隆
 ```
 python tts_inference.py --model-path=models/stepfun-ai/ --synthesis-type=clone --output-path=./output_audio/output_clone.wav
 ```
-### 2.Python运行
+### B.Python运行
 创建 run_tts.py
 ```
 sudo vim run_tts.py
